@@ -31,7 +31,6 @@ Semaphore::~Semaphore()
 // SEMAPHORE OPERATIONS
 void Semaphore::P()
 {
-	//cout << "here hahaha" << endl;
 	pthread_mutex_lock(&m); 
 	value--; 
 	if (value<0) { 
